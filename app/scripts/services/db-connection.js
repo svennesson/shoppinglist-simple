@@ -12,12 +12,10 @@ angular.module('shoppinglistSimpleApp')
     // Service logic
     // ...
 
-    var meaningOfLife = 42;
-
     // Public API here
     return {
       someMethod: function () {
-        return meaningOfLife;
+        return 'bajs';
       }
     };
   });
