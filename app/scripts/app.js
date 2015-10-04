@@ -18,6 +18,11 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
+      .when('/lists', {
+        templateUrl: 'views/lists.html',
+        controller: 'ListsCtrl',
+        controllerAs: 'lists'
+      })
       .otherwise({
         redirectTo: '/'
       });
