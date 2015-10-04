@@ -6,13 +6,14 @@ describe('Service: dbConnection', function () {
   beforeEach(module('shoppinglistSimpleApp'));
 
   // instantiate service
-  var dbConnection;
-  beforeEach(inject(function (_dbConnection_) {
-    dbConnection = _dbConnection_;
-  }));
+  // var dbConnection;
+  // beforeEach(inject(function (_dbConnection_) {
+  //  dbConnection = _dbConnection_;
+  //}));
 
-  it('should do something', function () {
-    expect(!!dbConnection).toBe(true);
-  });
+  //it('should do something', function () {
+  //  expect(!!dbConnection).toBe(true);
+  //});
+
 
 });
