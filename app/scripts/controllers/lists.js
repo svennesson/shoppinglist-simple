@@ -20,7 +20,7 @@ angular.module('shoppinglistSimpleApp')
 			$scope.formItem = '';
 		};
 
-		$scope.removeItem = function (index) {
-			$scope.items.splice(index, 1);
+		$scope.removeItem = function (item) {
+			$scope.items.$remove(item.$id);
 		};
 	});
