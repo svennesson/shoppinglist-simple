@@ -1,3 +1,12 @@
+// Colors
+$primary-color: 					#E91E63 !default;
+$primary-color-light: 				#F48FB1 !default;
+$primary-color-lighter:				#F8BBD0 !default;
+$primary-color-dark:				#C2185B !default;
+$primary-color-darker:				#880E4F !default;
+
+$accent-color: 						#81D4FA !default;
+
 // Basics of a navbar
 $navbar-height:                    40px !default;
 $navbar-default-color:             #777 !default;
@@ -7,3 +16,11 @@ $navbar-default-bg:                #E91E63 !default;
 $navbar-default-link-color:                white !default;
 $navbar-default-link-hover-color:          darken($navbar-default-link-color, 10%) !default;
 $navbar-default-link-active-color:         #555 !default;
+
+// Buttons
+$btn-primary-color:              white !default;
+$btn-primary-bg:                 $accent-color !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+// Font size
+$list-item-font-size: 			24px;

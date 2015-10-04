@@ -1,1 +1,18 @@
-<p>This is the lists view.</p>
+<form ng-submit="addItem()">
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="Item description" name="form-item" ng-model="formItem">
+		<span class="input-group-btn">
+		<button class="btn btn-primary" type="submit">Add item</button>
+		</span>
+	</div>
+</form></br>
+
+
+<ul data-as-sortable="dragControlListeners" data-ng-model="items" class="list-container"> 
+	<li data-ng-repeat="item in items" data-as-sortable-item>
+		<div data-as-sortable-item-handle class="list-item">
+			{{item}} 
+			<span ng-click="removeItem($index)" class="glyphicon glyphicon-2x glyphicon-remove pull-right"></span>
+		</div>
+	</li>
+</ul>

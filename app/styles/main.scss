@@ -1,9 +1,56 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
+@import "variables.scss";
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 body {
   padding: 0;
+  background-color: $primary-color-lighter;
+}
+
+.container {
+  margin: 0;
+}
+
+.list-container {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.list-item {
+  font-size: $list-item-font-size;
+}
+
+.glyphicon-2x{
+    font-size: 30px; 
+}
+
+.navbar {
+  border-radius: 0px;
+
+  .container {
+
+    .navbar-toggle {
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+
+        .icon-bar {
+          background-color: $accent-color;
+        }       
+      }
+
+      .icon-bar {
+        background-color: white;
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  border-color: none;
 }
 

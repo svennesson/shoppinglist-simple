@@ -20,10 +20,9 @@ angular
     $routeProvider
       .when('/lists', {
         templateUrl: 'views/lists.html',
-        controller: 'ListsCtrl',
-        controllerAs: 'lists'
+        controller: 'ListsCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/lists'
       });
   });
