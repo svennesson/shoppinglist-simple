@@ -12,7 +12,7 @@
 	<li data-ng-repeat="item in items" data-as-sortable-item>
 		<div data-as-sortable-item-handle class="list-item">
 			{{item.content}} 
-			<span ng-click="removeItem(item)" class="glyphicon glyphicon-2x glyphicon-remove pull-right"></span>
+			<span ng-click="items.$remove(item)" class="glyphicon glyphicon-2x glyphicon-remove pull-right"></span>
 		</div>
 	</li>
 </ul>
