@@ -14,7 +14,8 @@ angular
     'ngCookies',
     'ngRoute',
     'ngTouch',
-    'as.sortable'
+    'as.sortable',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider

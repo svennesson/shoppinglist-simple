@@ -8,15 +8,15 @@
  * Controller of the shoppinglistSimpleApp
  */
 angular.module('shoppinglistSimpleApp')
-	.controller('ListsCtrl', function ($scope) {
-		$scope.items = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
+	.controller('ListsCtrl', function ($scope, dbConnection) {
+		$scope.items = dbConnection.getItems();
 
 		$scope.addItem = function () {
-			$scope.items.push($scope.formItem);
+
+			$scope.items.$add({
+				content: $scope.formItem
+			});
+
 			$scope.formItem = '';
 		};
 

@@ -11,7 +11,7 @@
 <ul data-as-sortable="dragControlListeners" data-ng-model="items" class="list-container"> 
 	<li data-ng-repeat="item in items" data-as-sortable-item>
 		<div data-as-sortable-item-handle class="list-item">
-			{{item}} 
+			{{item.content}} 
 			<span ng-click="removeItem($index)" class="glyphicon glyphicon-2x glyphicon-remove pull-right"></span>
 		</div>
 	</li>

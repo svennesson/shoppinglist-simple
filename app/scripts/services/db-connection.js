@@ -8,14 +8,14 @@
  * Factory in the shoppinglistSimpleApp.
  */
 angular.module('shoppinglistSimpleApp')
-  .factory('dbConnection', function () {
+  .factory('dbConnection', function ($firebaseArray) {
     // Service logic
     // ...
-
+    var ref = new Firebase("https://vivid-fire-6230.firebaseio.com/");
     // Public API here
     return {
-      someMethod: function () {
-        return 'bajs';
+      getItems: function () {
+        return $firebaseArray(ref);
       }
     };
   });
