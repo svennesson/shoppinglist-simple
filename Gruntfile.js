@@ -79,7 +79,7 @@ module.exports = function (grunt) {
       },
       development: {
         options: {
-          remote: 'git@svennesson.com:shoppinglist-simple.git',
+          remote: 'git@github.com:svennesson/shoppinglist-simple.git',
           branch: 'gh-pages'
         }
       },
